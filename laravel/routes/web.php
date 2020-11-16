@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/** *Route::get('/', function () {
+    return "Hola desde la pagina de inicio";
 });
+
+Route::get('contactos', function(){
+    return "Seccion de contactos";
+});
+Route::get('saludo/{nombre?}', function($nombre = "Invitado"){
+    return "Saludos " . $nombre;
+});*/
+/** *Route::get('/', function(){
+	$nombre = "Jorge";
+    //return view('home',['nombre', $nombre]);
+    //return view('home', compact('nombre'));
+})->name('home');*/
+Route::view('/','home', ['nombre' => 'Jorge']);
+Route::view('login', 'login')-> name('login');
+Route::view('register', 'register')->name('register');
+Route::view('perfil', 'perfil')->name('perfil');
