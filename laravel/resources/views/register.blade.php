@@ -1,22 +1,10 @@
+@extends('/template/nav')
+@section('title', 'registro')
+@section('nav')
 <div class="register">
 			<fieldset>
-					<legend>Realiza mas rápido tus pedidos ingresando los siguientes datos:</legend>
-						<form name="register" method="post" action="../../app/Http/Controllers/Controller.php">
-
-								<select name="genre" required>
-									<option value="hombre">Hombre</option>
-									<option value="mujer">Mujer</option>
-									<option value="genero" selected>Genero</option>
-								</select>
-								<p>
-									<input type="radio" name="person" value="Company"/>
-									<label>Empresa</label>
-
-
-									<input type="radio" name="person" value="natural"/>
-									<label>Persona natural</label>
-								</p>
-
+					<legend>Realiza tu registro ingresando los siguientes datos:</legend>
+						<form name="register" method="post" action="">
 								<input type="text" name="nombre" placeholder="Usuario.." required>
 								<input type="email" name="correo" placeholder="Correo electronico.." required>
 								<input type="password" name="password" placeholder="Contraseña.." >
@@ -25,5 +13,13 @@
 								<input type="submit" name="btn-register" value="Registrar usuario">
 						</form>
 			</fieldset>
-			<p><a href="http://localhost/unikmobiliarioimportado/views/front/login.php" class="registrado">Ya estoy registrado!</a></p>
+			<p><a href="/laravel/server.php/login" class="registrado">Ya estoy registrado!</a></p>
 	</div>
+	<ul>
+		@forelse($register as $registerItem)
+			<li>{{ $registerItem['title']}}</li>
+		@empty
+			<li>No hay proyectos para mostrar</li>
+		@endforelse
+	<ul>
+	@endsection

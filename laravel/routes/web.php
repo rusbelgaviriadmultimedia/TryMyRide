@@ -29,6 +29,6 @@ Route::get('saludo/{nombre?}', function($nombre = "Invitado"){
     //return view('home', compact('nombre'));
 })->name('home');*/
 Route::view('/','home', ['nombre' => 'Jorge']);
-Route::view('/login', 'login')-> name('login');
-Route::view('/laravel/server.php/register', 'register')->name('register');
-Route::view('/laravel/server.php/perfil', 'perfil')->name('perfil');
+Route::view('login', 'login')-> name('/laravel/server.php/login');
+Route::get('/register', 'RegisterController@index')->name('register');
+Route::view('/perfil', 'perfil')->name('perfil');
