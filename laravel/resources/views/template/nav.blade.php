@@ -23,15 +23,16 @@
 		    </figure>
 	  		<input type="submit" value="≡" class="buttonOn" onclick="toggle()" id="toggle"/>
 	  		<nav  id="nav">
+
 	       		<input type="submit" name="toggle" value="x" class="buttonOff" onclick="toggle()"/>
 	      		<ul>
-			        <li ><a  href="/laravel/server.php">Home</a>
+			        <li class="{{ request()->routeIs('home') ? 'active' : '' }}"><a  href="/laravel/server.php">Home</a>
 			        </li>
-	        		<li><a href="/laravel/server.php/login">Ingresar</a>
+	        		<li class="{{ request()->routeIs('login') ? 'active' : '' }}"><a href="/laravel/server.php/login">Ingresar</a>
 	          		</li>
-	          		<li><a href="/laravel/server.php/register">Registrarse</a>
+	          		<li class="{{ request()->routeIs('register') ? 'active' : '' }}"><a href="/laravel/server.php/register">Registrarse</a>
 	          		</li>
-	          		<li><a href="/laravel/server.php/perfil">Editar perfil</a>
+	          		<li class="{{ request()->routeIs('perfil') ? 'active' : '' }}"><a href="/laravel/server.php/perfil">Editar perfil</a>
 	          		</li>
 	      		</ul>
 	    	</nav>
