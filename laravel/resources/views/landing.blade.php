@@ -25,3 +25,4 @@
 	  		@include('template.nav')
 	 	 </header>
 	  @yield('nav')
+      @include('template.foot')

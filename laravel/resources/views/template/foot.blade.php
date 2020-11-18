@@ -2,21 +2,22 @@
 <footer>
 	<div>
 		<p class="spacing-foot">Email: kimar041604@gmail.com</p>
+		<p class="spacing-foot">Email:<a href="  https://rusbelgaviriadmultimedia.github.io/" target="_blank">Página web</a>
+			</p>
 	</div>
 	<div class="redes">
-		<a href="">
+			<figure><a href="https://www.behance.net/rusbelmultimedia" target="_blank"><img src="rusbelgaviriadmultimedia.github.io/Public/images/Redes/Behance.png" alt="Behance"/>	</a></figure>
 			<figure>
-				<img src="" alt="Instagram">
-			</figure>
-		</a>
+				<a href="https://github.com/rusbelgaviriadmultimedia" target="_blank"><img src="rusbelgaviriadmultimedia.github.io/Public/images/Redes/github.png" alt="github"/></a>
 
-		<a href="">
+			</figure>
 			<figure>
-				<img src="" alt="Facebook">
+				<a href="https://www.facebook.com/rusbelgaviriad.multimedia" target="_blank"><img src="rusbelgaviriadmultimedia.github.io/Public/images/Redes/facebook.png" alt="Facebook"/></a>
 			</figure>
-		</a>
-
-	</div>
+			<figure>
+				<a href="https://www.linkedin.com/in/rusbelgaviriadmultimedia/" target="_blank"><img src="rusbelgaviriadmultimedia.github.io/Public/images/Redes/linkedin.png" alt="linkedin"/></a>
+			</figure>
+		</div>
 	<div class="derechos">
 		<p>&copy; Todos los derechos reservados  {{date("Y")}} -Rusbel Gaviria || diseño WEB : Kimar
 		</p>
