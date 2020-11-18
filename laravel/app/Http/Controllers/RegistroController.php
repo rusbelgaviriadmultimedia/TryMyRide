@@ -17,6 +17,13 @@ class RegistroController extends Controller
 
 	//require_once ('../../Modelo/validar_reg.php');
 
-    	return request('correo');
+    	request()->validate([
+    		'nombre' => 'required',
+    		'correo' => 'required|email',
+    		'password' => 'required',
+    		'conf_pass' => 'required|min:3'
+    	]);
+
+    	return 'Datos validados';
     }
 }

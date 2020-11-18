@@ -6,10 +6,14 @@
 					<legend>Realiza tu registro ingresando los siguientes datos:</legend>
 						<form name="register" method="post" action="{{ route('register')}}">
 							@csrf
-								<input type="text" name="nombre" placeholder="Usuario.." required>
-								<input type="email" name="correo" placeholder="Correo electronico.." required>
-								<input type="password" name="password" placeholder="Contraseña.." >
-								<input type="password" name="conf_pass" placeholder="Confirmar contraseña.." required>
+								<input type="text" name="nombre" placeholder="Usuario.." value="{{ old('nombre') }}" >
+								{!! $errors->first('nombre', '<small>:message</small>')!!}
+								<input type="email" name="correo" placeholder="Correo electronico.." value="{{ old('correo') }}" >
+								{!! $errors->first('correo', '<small>:message</small>')!!}
+								<input type="password" name="password" placeholder="Contraseña.." value="{{ old('password') }}">
+								{!! $errors->first('password', '<small>:message</small>')!!}
+								<input type="password" name="conf_pass" placeholder="Confirmar contraseña.." value="{{ old('conf_pass') }}" >
+								{!! $errors->first('conf_pass', '<small>:message</small>')!!}
 							<p>Sus datos personales se usaran para respaldar su experiencia en este sitio web, para administrar el acceso a su cuenta y para otros fines descriptos en nuestra <a href="" class="polipriv">politica de privacidad!</a></p>
 								<input type="submit" name="btn-register" value="Registrar usuario">
 						</form>
