@@ -1,4 +1,4 @@
-@extends('/template/nav')
+@extends('landing')
 @section('title', 'Editar perfil')
 @section('nav')
 @endsection

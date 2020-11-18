@@ -1,4 +1,4 @@
-@extends('/template/nav')
+@extends('landing')
 @section('title','Iniciar sesión')
 @section('nav')
 <div class="register">

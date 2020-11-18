@@ -1,10 +1,11 @@
-@extends('/template/nav')
+@extends('landing')
 @section('title', 'registro')
 @section('nav')
 <div class="register">
 			<fieldset>
 					<legend>Realiza tu registro ingresando los siguientes datos:</legend>
-						<form name="register" method="post" action="">
+						<form name="register" method="post" action="{{ route('register')}}">
+							@csrf
 								<input type="text" name="nombre" placeholder="Usuario.." required>
 								<input type="email" name="correo" placeholder="Correo electronico.." required>
 								<input type="password" name="password" placeholder="Contraseña.." >

@@ -1,4 +1,4 @@
-@extends('/template/nav')
+@extends('landing')
 @section('nav')
 <h1>Home</h1>
 <p>Bienvenid@ {{ $nombre ?? "Invitado"}}  </p>
