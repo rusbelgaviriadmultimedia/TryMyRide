@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\User;
 class RegistroController extends Controller
 {
     public function store()
@@ -23,7 +23,19 @@ class RegistroController extends Controller
     		'password' => 'required',
     		'conf_pass' => 'required|min:3'
     	]);
-
-    	return 'Datos validados';
+        // $nombre = request('nombre');
+        // $correo = request('correo');
+        // $password = request('password');
+        // $confi_pass = request('vonfi_pass');
+        // return User::create([
+        //     'nombre' => $nombre,
+        //     'correo' => $correo,
+        //     'password' => $password,
+        // ]);
+        return redirect('login')->with('registro', 'Registro exitoso');
+    }
+    public function create()
+    {
+        return view('register');
     }
 }

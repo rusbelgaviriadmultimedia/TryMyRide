@@ -24,5 +24,6 @@
 	  		<input type="submit" value="≡" class="buttonOn" onclick="toggle()" id="toggle"/>
 	  		@include('template.nav')
 	 	 </header>
+        @include('template.session-registro')
 	  @yield('nav')
       @include('template.foot')

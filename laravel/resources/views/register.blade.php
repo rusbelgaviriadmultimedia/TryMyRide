@@ -4,7 +4,7 @@
 <div class="register">
 			<fieldset>
 					<legend>Realiza tu registro ingresando los siguientes datos:</legend>
-						<form name="register" method="post" action="{{ route('register')}}">
+						<form name="register" method="post" action="{{ route('registro.store')}}">
 							@csrf
 								<input type="text" name="nombre" placeholder="Usuario.." value="{{ old('nombre') }}" >
 								{!! $errors->first('nombre', '<small>:message</small>')!!}
@@ -20,11 +20,11 @@
 			</fieldset>
 			<p><a href="/laravel/server.php/login" class="registrado">Ya estoy registrado!</a></p>
 	</div>
-	<ul>
+	{{-- <ul>
 		@forelse($register as $registerItem)
 			<li>{{ $registerItem['title']}}</li>
 		@empty
 			<li>No hay proyectos para mostrar</li>
 		@endforelse
-	<ul>
+	<ul> --}}
 	@endsection

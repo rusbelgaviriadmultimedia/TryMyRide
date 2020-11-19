@@ -33,4 +33,4 @@ Route::view('login', 'login')-> name('/laravel/server.php/login');
 Route::get('/register', 'RegisterController@index')->name('register');
 Route::view('/perfil', 'perfil')->name('perfil');
 
-Route::post('register', 'RegistroController@store');
+Route::post('register', 'RegistroController@store')->name('registro.store');
