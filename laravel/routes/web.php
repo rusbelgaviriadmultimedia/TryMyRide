@@ -34,3 +34,10 @@ Route::get('/register', 'RegisterController@index')->name('register');
 Route::view('/perfil', 'perfil')->name('perfil');
 
 Route::post('register', 'RegistroController@store')->name('registro.store');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
