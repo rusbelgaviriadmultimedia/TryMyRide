@@ -6,3 +6,13 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+*{color:#3C4858;}
+.active a {
+   color:#3fae2a;
+   text-decoration:none;
+}
+bottom{
+	display:flex;
+	flex-direction:row;
+}

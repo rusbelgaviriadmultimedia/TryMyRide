@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="http://prueba_rusbel.test/laravel/public/css/app.css"/>
     <script src="http://prueba_rusbel.test/laravel/public/js/app.js" defer></script>
     <style>
-    	*{color:#3C4858;
-    	}
-    	.active a {
-    		color:#3fae2a;
-    		text-decoration:none;
-    	}
+
     </style>
 </head>
 <body>

@@ -13,3 +13,10 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
+
+mix.browserSync('http://prueba_rusbel.test/laravel/server.php');
+
+if (mix.inProduction())
+{
+	mix.version();
+}
