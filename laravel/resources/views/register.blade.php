@@ -4,7 +4,7 @@
 <div class="register">
 			<fieldset>
 					<legend>Realiza tu registro ingresando los siguientes datos:</legend>
-						<form name="register" method="post" action="{{ route('registro.store')}}">
+						<form method="POST" action="{{ route('register') }}">
 							@csrf
 								<input type="text" name="nombre" placeholder="Usuario.." value="{{ old('nombre') }}" >
 								{!! $errors->first('nombre', '<small>:message</small>')!!}

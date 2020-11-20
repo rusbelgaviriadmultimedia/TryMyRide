@@ -1,8 +1,8 @@
-@yield('foot');
+@yield('foot')
 <footer>
 	<div>
 		<p class="spacing-foot">Email: kimar041604@gmail.com</p>
-		<p class="spacing-foot">Email:<a href="  https://rusbelgaviriadmultimedia.github.io/" target="_blank">Página web</a>
+		<p class="spacing-foot"><a href="  https://rusbelgaviriadmultimedia.github.io/" target="_blank">Página web</a>
 			</p>
 	</div>
 	<div class="redes">

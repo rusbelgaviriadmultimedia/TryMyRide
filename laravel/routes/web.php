@@ -28,16 +28,14 @@ Route::get('saludo/{nombre?}', function($nombre = "Invitado"){
     //return view('home',['nombre', $nombre]);
     //return view('home', compact('nombre'));
 })->name('home');*/
-Route::view('/','home', ['nombre' => 'Jorge'])->name('home');
-Route::view('login', 'login')-> name('/laravel/server.php/login');
+Route::view('/','home')->name('home');
+Route::view('login', 'login')-> name('/login');
 Route::get('/register', 'RegisterController@index')->name('register');
 Route::view('/perfil', 'perfil')->name('perfil');
 
 Route::post('register', 'RegistroController@store')->name('registro.store');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
